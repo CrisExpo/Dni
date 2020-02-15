@@ -17,4 +17,14 @@ public class TablaAsignacion {
         return getLetra(posicion);
     }
 
+    char getLetra(int posicion) throws ArrayIndexOutOfBoundsException {
+        try{
+            return this.tabla[posicion];
+        }
+        catch (ArrayIndexOutOfBoundsException exception){
+            throw new ArrayIndexOutOfBoundsException(
+                    "Posicion fuera de los limites de la tabla");
+        }
+    }
+
 }
