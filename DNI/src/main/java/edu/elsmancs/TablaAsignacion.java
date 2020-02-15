@@ -11,4 +11,10 @@ public class TablaAsignacion {
 
     TablaAsignacion() {};
 
+    char calcularLetra(String DNI){
+        int dni = Integer.parseInt(DNI);
+        int posicion = dni % getModulo();
+        return getLetra(posicion);
+    }
+
 }

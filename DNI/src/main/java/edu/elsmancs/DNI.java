@@ -14,6 +14,12 @@ public class DNI {
 
         return this.dni;
     }
+
+    private TablaAsignacion getTablaAsignacion() {
+
+        return this.tabla;
+    }
+
     @Override
     public String toString() {
         return getDni();
