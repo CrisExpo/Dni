@@ -4,10 +4,19 @@ package edu.elsmancs;
  * Hello world!
  *
  */
-public class DNI
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+public class DNI {
+
+    private String dni;
+
+    public void Dni(String dni) {
+
+        this.dni = dni;
     }
+
+    private String getDni() {
+
+        return this.dni;
+    }
+
+
 }
