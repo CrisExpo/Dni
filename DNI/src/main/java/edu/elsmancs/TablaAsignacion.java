@@ -2,8 +2,7 @@ package edu.elsmancs;
 
 import java.util.List;
 
-public class TablaAsignacion {
-
+class TablaAsignacion {
     private final char[] tabla = {'T', 'R', 'W', 'A', 'G', 'M',
             'Y', 'F', 'P', 'D', 'X', 'B',
             'N', 'J', 'Z', 'S', 'Q', 'V',
@@ -27,4 +26,23 @@ public class TablaAsignacion {
         }
     }
 
+    private int getModulo() {
+        return this.tabla.length;
+    }
+
+    static boolean calcLetra(List<String> casosTest, TablaAsignacion tabla){
+
+        for (String dni : casosTest) {
+
+            String parteNumericaDni = dni.substring(0, dni.length() - 1);
+            char letraDni = dni.charAt(dni.length() - 1);
+
+            if (tabla.calcularLetra( parteNumericaDni ) == letraDni) {
+                continue;
+            } else {
+                return false;
+            }
+        }
+        return true;
+    }
 }

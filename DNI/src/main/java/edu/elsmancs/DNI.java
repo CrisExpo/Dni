@@ -5,7 +5,7 @@ public class DNI {
     private String dni;
     private TablaAsignacion tabla = new TablaAsignacion();
 
-    public void Dni(String dni) {
+    public DNI(String dni) {
 
         this.dni = dni;
     }
