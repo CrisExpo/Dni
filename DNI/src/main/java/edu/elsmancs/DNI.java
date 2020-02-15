@@ -1,12 +1,9 @@
 package edu.elsmancs;
 
-/**
- * Hello world!
- *
- */
 public class DNI {
 
     private String dni;
+    private TablaAsignacion tabla = new TablaAsignacion();
 
     public void Dni(String dni) {
 
@@ -32,6 +29,7 @@ public class DNI {
         return true;
     }
     String extraerParteNumericaDni() {
+
         return (String) dni.substring(0, dni.length() - 1);
     }
 }
